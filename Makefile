@@ -1,13 +1,16 @@
 .DEFAULT_GOAL := all
 
+# Paths
 BIN     = ./node_modules/.bin
 SRC     = ./src
 DIST    = ./dist
 DOCS    = ./docs
 TESTS   = ./test/src/**/*.spec.js
 
+# Tasks
+
 install:
-	npm install
+	npm i .
 
 lint:
 	$(BIN)/eslint $(SRC)
@@ -24,5 +27,5 @@ doc:
 all: install lint test build doc
 
 
-# Phonies...
-.PHONY: install lint test build doc
+# Phonies
+.PHONY: install lint test build doc all
