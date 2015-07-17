@@ -1,6 +1,6 @@
 # Node Template Project
 
-A very simple NodeJS template/seed project built for ES2016 standard development.
+A very simple NodeJS template/seed project built for ES2015 development.
 
 ## Components:
 
