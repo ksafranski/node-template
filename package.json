@@ -5,11 +5,11 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "babel src --out-dir dist --experimental",
-    "test": "mocha --compilers js:babel/register test/**/*.spec.js",
-    "lint": "eslint src",
-    "doc": "esdoc -c esdoc.json",
-    "dev": "npm run lint && npm run test && npm run build && npm start"
+    "build": "make build",
+    "test": "make test",
+    "lint": "make lint",
+    "doc": "make doc",
+    "dev": "make && npm start"
   },
   "author": "",
   "license": "MIT",
