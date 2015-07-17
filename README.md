@@ -13,6 +13,9 @@ A very simple NodeJS template/seed project built for ES2015 development.
 
 ## Scripts
 
+A `Makefile` is included for managing build and install tasks. The commands are 
+then referenced in the `package.json` `scripts`:
+
 Using `npm run {script_name}` for the following...
 
 * `start` will run the main script
