@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "babel src --out-dir dist --experimental",
-    "test": "mocha --compilers js:babel/register test/**/*.js",
+    "test": "mocha --compilers js:babel/register test/**/*.spec.js",
     "lint": "eslint src",
     "doc": "jsdoc -r -d docs src --verbose -R README.md",
     "dev": "npm run lint && npm run test && npm run build && npm start"
