@@ -1,7 +1,7 @@
 /**
  * App class
  */
-export default class {
+export class App {
 
   constructor () {
     console.log('Started')
