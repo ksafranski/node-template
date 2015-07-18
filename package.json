@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "all": "make",
     "start": "make start",
     "clean": "make clean",
     "build": "make build",
