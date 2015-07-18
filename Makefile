@@ -1,13 +1,17 @@
 .DEFAULT_GOAL := all
 
 # Paths
-BIN     = ./node_modules/.bin
+DEPS    = ./node_modules
+BIN     = $(DEPS)/.bin
 SRC     = ./src
 DIST    = ./dist
 DOCS    = ./docs
 TESTS   = ./test/src/**/*.spec.js
 
 # Tasks
+
+clean:
+	rm -rf $(DIST) && rm -rf $(DEPS)
 
 install:
 	npm i .
@@ -26,7 +30,7 @@ start:
 
 doc:
 	$(BIN)/esdoc -c esdoc.json
-	
+
 dev: install lint test build start
 
 all: install lint test build doc
