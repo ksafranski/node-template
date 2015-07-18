@@ -4,12 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "make start",
     "build": "make build",
     "test": "make test",
     "lint": "make lint",
     "doc": "make doc",
-    "dev": "make && npm start"
+    "dev": "make dev"
   },
   "author": "",
   "license": "MIT",
