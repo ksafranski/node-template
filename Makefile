@@ -33,7 +33,7 @@ doc:
 
 dev: install lint test build start
 
-all: install lint test build doc
+all: clean install lint test build doc
 
 
 # Phonies
