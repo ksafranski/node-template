@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "make start",
+    "clean": "make clean",
     "build": "make build",
     "test": "make test",
     "lint": "make lint",
