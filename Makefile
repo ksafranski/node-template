@@ -21,8 +21,13 @@ test:
 build:
 	$(BIN)/babel $(SRC) --out-dir $(DIST) --experimental
 
+start:
+	node server.js
+
 doc:
 	$(BIN)/esdoc -c esdoc.json
+	
+dev: install lint test build start
 
 all: install lint test build doc
 
