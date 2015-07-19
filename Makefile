@@ -29,7 +29,7 @@ test:
 	$(BIN)/mocha --compilers js:babel/register $(TESTS)$(FILE)
 
 build:
-	$(BIN)/babel $(SRC) --out-dir $(DIST) --experimental
+	$(BIN)/babel $(SRC) --out-dir $(DIST)
 
 start:
 	node dist/server.js

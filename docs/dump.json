@@ -71,7 +71,27 @@
     "access": null,
     "description": null,
     "lineNumber": 2,
-    "content": "// Just starts the app\nimport { App } from './lib/app'\nnew App()"
+    "content": "/*eslint no-unused-vars:0 */\nimport { App } from './lib/app'\nconst app = new App()"
+  },
+  {
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "app",
+    "memberof": "src/server.js",
+    "longname": "src/server.js~app",
+    "access": null,
+    "export": false,
+    "importPath": "template/src/server.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/lib/app~App"
+      ]
+    }
   },
   {
     "kind": "external",

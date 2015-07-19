@@ -10,8 +10,8 @@
             "type": "Identifier",
             "name": "App",
             "range": [
-              32,
-              35
+              38,
+              41
             ],
             "loc": {
               "start": {
@@ -28,8 +28,8 @@
             "type": "Identifier",
             "name": "App",
             "range": [
-              32,
-              35
+              38,
+              41
             ],
             "loc": {
               "start": {
@@ -43,8 +43,8 @@
             }
           },
           "range": [
-            32,
-            35
+            38,
+            41
           ],
           "loc": {
             "start": {
@@ -63,8 +63,8 @@
         "value": "./lib/app",
         "raw": "'./lib/app'",
         "range": [
-          43,
-          54
+          49,
+          60
         ],
         "loc": {
           "start": {
@@ -78,8 +78,8 @@
         }
       },
       "range": [
-        23,
-        55
+        29,
+        61
       ],
       "loc": {
         "start": {
@@ -93,11 +93,11 @@
       },
       "leadingComments": [
         {
-          "type": "Line",
-          "value": " Just starts the app",
+          "type": "Block",
+          "value": "eslint no-unused-vars:0 ",
           "range": [
             0,
-            22
+            28
           ],
           "loc": {
             "start": {
@@ -106,53 +106,91 @@
             },
             "end": {
               "line": 1,
-              "column": 22
+              "column": 28
             }
           }
         }
       ]
     },
     {
-      "type": "ExpressionStatement",
-      "expression": {
-        "type": "NewExpression",
-        "callee": {
-          "type": "Identifier",
-          "name": "App",
+      "type": "VariableDeclaration",
+      "declarations": [
+        {
+          "type": "VariableDeclarator",
+          "id": {
+            "type": "Identifier",
+            "name": "app",
+            "range": [
+              67,
+              70
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 6
+              },
+              "end": {
+                "line": 3,
+                "column": 9
+              }
+            }
+          },
+          "init": {
+            "type": "NewExpression",
+            "callee": {
+              "type": "Identifier",
+              "name": "App",
+              "range": [
+                77,
+                80
+              ],
+              "loc": {
+                "start": {
+                  "line": 3,
+                  "column": 16
+                },
+                "end": {
+                  "line": 3,
+                  "column": 19
+                }
+              }
+            },
+            "arguments": [],
+            "range": [
+              73,
+              82
+            ],
+            "loc": {
+              "start": {
+                "line": 3,
+                "column": 12
+              },
+              "end": {
+                "line": 3,
+                "column": 21
+              }
+            }
+          },
           "range": [
-            59,
-            62
+            67,
+            82
           ],
           "loc": {
             "start": {
               "line": 3,
-              "column": 4
+              "column": 6
             },
             "end": {
               "line": 3,
-              "column": 7
+              "column": 21
             }
           }
-        },
-        "arguments": [],
-        "range": [
-          55,
-          64
-        ],
-        "loc": {
-          "start": {
-            "line": 3,
-            "column": 0
-          },
-          "end": {
-            "line": 3,
-            "column": 9
-          }
         }
-      },
+      ],
+      "kind": "const",
       "range": [
-        55,
-        64
+        61,
+        82
       ],
       "loc": {
         "start": {
@@ -161,15 +199,15 @@
         },
         "end": {
           "line": 3,
-          "column": 9
+          "column": 21
         }
       }
     }
   ],
   "sourceType": "module",
   "range": [
-    23,
-    64
+    29,
+    82
   ],
   "loc": {
     "start": {
@@ -178,16 +216,16 @@
     },
     "end": {
       "line": 3,
-      "column": 9
+      "column": 21
     }
   },
   "comments": [
     {
-      "type": "Line",
-      "value": " Just starts the app",
+      "type": "Block",
+      "value": "eslint no-unused-vars:0 ",
       "range": [
         0,
-        22
+        28
       ],
       "loc": {
         "start": {
@@ -196,7 +234,7 @@
         },
         "end": {
           "line": 1,
-          "column": 22
+          "column": 28
         }
       }
     }
