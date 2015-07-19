@@ -1,3 +1,3 @@
-// Just starts the app
+/*eslint no-unused-vars:0 */
 import { App } from './lib/app'
-new App()
+const app = new App()
