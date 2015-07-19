@@ -6,6 +6,7 @@ BIN     = $(DEPS)/.bin
 SRC     = ./src
 DIST    = ./dist
 DOCS    = ./docs
+PKG     = ./package.json
 
 # Tests
 TESTS   = ./test/src/
@@ -30,7 +31,7 @@ clean:
 	$(call colorecho, "Cleaning $(DIST) and $(DEPS)")
 	rm -rf $(DIST) && rm -rf $(DEPS)
 
-install:
+install: $(PKG)
 	$(call colorecho, "Installing")
 	npm i .
 
@@ -42,7 +43,7 @@ test:
 	$(call colorecho, "Testing $(TESTS)$(FILE)")
 	$(BIN)/mocha --compilers js:babel/register $(TESTS)$(FILE)
 
-build:
+build: $(SRC)/*.js
 	$(call colorecho, "Building $(SRC) to $(DIST)")
 	$(BIN)/babel $(SRC) --out-dir $(DIST)
 
@@ -60,4 +61,4 @@ all: clean install lint test build doc
 
 
 # Phonies
-.PHONY: install lint test build doc start
+.PHONY: lint test doc start
