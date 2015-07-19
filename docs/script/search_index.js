@@ -1,8 +1,8 @@
 window.esdocSearchIndex = [
   [
-    "template/src/app.js~app",
-    "class/src/app.js~app.html",
-    "<span>app</span> <span class=\"search-result-import-path\">template/src/app.js</span>",
+    "template/src/lib/app.js~app",
+    "class/src/lib/app.js~App.html",
+    "<span>App</span> <span class=\"search-result-import-path\">template/src/lib/app.js</span>",
     "class"
   ],
   [
@@ -330,21 +330,27 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
-    "src/app.js",
-    "file/src/app.js.html",
-    "src/app.js",
+    "src/lib/app.js",
+    "file/src/lib/app.js.html",
+    "src/lib/app.js",
     "file"
   ],
   [
-    "src/app.js~app#constructor",
-    "class/src/app.js~app.html#instance-constructor-constructor",
-    "src/app.js~app#constructor",
+    "src/lib/app.js~app#constructor",
+    "class/src/lib/app.js~App.html#instance-constructor-constructor",
+    "src/lib/app.js~App#constructor",
     "method"
   ],
   [
-    "src/app.js~app#test",
-    "class/src/app.js~app.html#instance-method-test",
-    "src/app.js~app#test",
+    "src/lib/app.js~app#test",
+    "class/src/lib/app.js~App.html#instance-method-test",
+    "src/lib/app.js~App#test",
     "method"
+  ],
+  [
+    "src/server.js",
+    "file/src/server.js.html",
+    "src/server.js",
+    "file"
   ]
 ]

@@ -6,7 +6,13 @@ BIN     = $(DEPS)/.bin
 SRC     = ./src
 DIST    = ./dist
 DOCS    = ./docs
-TESTS   = ./test/src/**/*.spec.js
+
+# Tests
+TESTS   = ./test/src/
+SPACE   :=
+SPACE   +=
+# Default to recursive, can override on run
+FILE    = $(SPACE)--recursive
 
 # Tasks
 
@@ -20,13 +26,13 @@ lint:
 	$(BIN)/eslint $(SRC)
 
 test:
-	$(BIN)/mocha --compilers js:babel/register $(TESTS)
+	$(BIN)/mocha --compilers js:babel/register $(TESTS)$(FILE)
 
 build:
 	$(BIN)/babel $(SRC) --out-dir $(DIST) --experimental
 
 start:
-	node server.js
+	node dist/server.js
 
 doc:
 	$(BIN)/esdoc -c esdoc.json
@@ -37,4 +43,4 @@ all: clean install lint test build doc
 
 
 # Phonies
-.PHONY: install lint test build doc all
+.PHONY: install lint test build doc start

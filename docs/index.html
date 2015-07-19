@@ -31,7 +31,7 @@
   <h2>Class</h2>
   <ul>
     
-  <li data-ice="classDoc"><span><a href="class/src/app.js~app.html">app</a></span></li>
+  <li data-ice="classDoc"><span><a href="class/src/lib/app.js~App.html">App</a></span></li>
 </ul>
 </div>
 
@@ -58,9 +58,13 @@
 <li><strong><a href="https://esdoc.org/">ESDoc</a></strong>: JSDoc parser</li>
 </ul>
 <h2 id="scripts">Scripts</h2>
-<p>Using <code>npm run {script_name}</code> for the following...</p>
+<p>A <code>Makefile</code> is included for managing build and install tasks. The commands are
+then referenced in the <code>package.json</code> <code>scripts</code> if that is the preferred
+task method:</p>
 <ul>
+<li><code>all</code> (default) will run all build tasks</li>
 <li><code>start</code> will run the main script</li>
+<li><code>clean</code> will remove the <code>/dist</code> and <code>/node_modules</code> directories</li>
 <li><code>build</code> will transpile ES2015 code in <code>/src</code> to <code>/dist</code></li>
 <li><code>test</code> will run all spec files in <code>/test/src</code></li>
 <li><code>lint</code> will lint all files in <code>/src</code></li>
