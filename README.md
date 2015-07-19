@@ -1,6 +1,6 @@
 # Node Template Project
 
-A very simple NodeJS template/seed project built for ES2015 development.
+A NodeJS template project built for ES2015 development.
 
 ## Components:
 
@@ -11,7 +11,7 @@ A very simple NodeJS template/seed project built for ES2015 development.
 * **[ESLint](http://eslint.org/)**: Linting, includes `babel-eslint` for ES2015 support
 * **[ESDoc](https://esdoc.org/)**: JSDoc parser
 
-## Scripts
+## Makefile and Scripts
 
 A `Makefile` is included for managing build and install tasks. The commands are
 then referenced in the `package.json` `scripts` if that is the preferred
@@ -29,3 +29,5 @@ task method:
   * tests, then...
   * build/transpile, then...
   * the main script.
+
+Both `make {COMMAND}` and `npm run {COMMAND}` work for any of the above commands.

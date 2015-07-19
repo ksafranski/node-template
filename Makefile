@@ -37,7 +37,7 @@ start:
 doc:
 	$(BIN)/esdoc -c esdoc.json
 
-dev: install lint test build start
+dev: lint test build start
 
 all: clean install lint test build doc
 
