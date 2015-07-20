@@ -4,7 +4,7 @@
 DEPS    = ./node_modules
 BIN     = $(DEPS)/.bin
 SRC     = ./src
-DIST    = ./dist
+BUILD   = ./build
 DOCS    = ./docs
 PKG     = ./package.json
 
@@ -44,12 +44,12 @@ test:
 	$(BIN)/mocha --compilers js:babel/register $(TESTS)$(FILE)
 
 build: $(SRC)/*.js
-	$(call colorecho, "Building $(SRC) to $(DIST)")
-	$(BIN)/babel $(SRC) --out-dir $(DIST)
+	$(call colorecho, "Building $(SRC) to $(BUILD)")
+	$(BIN)/babel $(SRC) --out-dir $(BUILD)
 
 start:
 	$(call colorecho, "Starting...")
-	node dist/server.js
+	node build/server.js
 
 doc:
 	$(call colorecho, "Building Docs")
