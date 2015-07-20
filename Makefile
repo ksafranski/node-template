@@ -28,8 +28,8 @@ endef
 # Tasks
 
 clean:
-	$(call colorecho, "Cleaning $(DIST) and $(DEPS)")
-	rm -rf $(DIST) && rm -rf $(DEPS)
+	$(call colorecho, "Cleaning $(BUILD) and $(DEPS)")
+	rm -rf $(BUILD) && rm -rf $(DEPS)
 
 install: $(PKG)
 	$(call colorecho, "Installing")
